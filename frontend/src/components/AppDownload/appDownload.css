@@ -1,0 +1,65 @@
+/* Base styles for desktop */
+.app-download {
+    text-align: center;
+    margin: 100px;
+    font-size: 50px;
+}
+
+.app-download-platform {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensures alignment */
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.app-download-platform img {
+    width: 170px;
+    cursor: pointer;
+}
+
+/* Media query for tablets and medium devices */
+@media (max-width: 1024px) {
+    .app-download {
+        margin: 50px;
+        font-size: 40px;
+    }
+
+    .app-download-platform img {
+        width: 150px;
+    }
+}
+
+/* Media query for small devices and phones */
+@media (max-width: 768px) {
+    .app-download {
+        margin: 30px;
+        font-size: 35px;
+    }
+
+    .app-download-platform {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .app-download-platform img {
+        width: 130px;
+    }
+}
+
+/* Media query for extra small devices */
+@media (max-width: 480px) {
+    .app-download {
+        margin: 20px;
+        font-size: 30px;
+    }
+
+    .app-download-platform {
+        flex-direction: column;
+        gap: 20px; /* Adds space between the images */
+    }
+
+    .app-download-platform img {
+        width: 110px;
+    }
+}

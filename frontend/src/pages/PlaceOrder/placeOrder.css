@@ -1,0 +1,155 @@
+/* .place-order{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50 px;
+    margin-top: 100px;
+}
+.place-order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+   
+}
+
+.place-order-left .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.place-order-left input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    outline-color: tomato;
+}
+
+.place-order-left  .multi-fields{
+    display: flex;
+    gap: 10px;
+
+}
+
+.place-order-right{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+
+.place-order .cart-total button{
+    margin-top: 30px;
+} */
+
+.place-order {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+/* Left section */
+.place-order-left {
+    width: 100%;
+    max-width: max(30%, 500px);
+}
+
+.place-order-left .title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.place-order-left input {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 5px;
+    outline-color: tomato;
+}
+
+.place-order-left .multi-fields {
+    display: flex;
+    gap: 10px;
+}
+
+/* Right section */
+.place-order-right {
+    width: 100%;
+    max-width: max(40%, 500px);
+}
+
+/* Button styling */
+.place-order .cart-total button {
+    margin-top: 30px;
+}
+
+/* Media Queries */
+
+/* Tablets and medium devices (up to 1024px) */
+@media (max-width: 1024px) {
+    .place-order {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .place-order-left {
+        max-width: 90%;
+    }
+
+    .place-order-right {
+        max-width: 90%;
+    }
+}
+
+/* Small devices (up to 768px) */
+@media (max-width: 768px) {
+    .place-order {
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 20px;
+    }
+
+    .place-order-left {
+        max-width: 100%;
+    }
+
+    .place-order-right {
+        max-width: 100%;
+    }
+
+    .place-order-left .title {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .place-order .cart-total button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+/* Extra small devices (up to 480px) */
+@media (max-width: 480px) {
+    .place-order {
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .place-order-left .title {
+        font-size: 20px;
+    }
+
+    .place-order-left input {
+        padding: 8px;
+    }
+
+    .place-order .cart-total button {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

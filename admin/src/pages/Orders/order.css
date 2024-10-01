@@ -1,0 +1,134 @@
+/* .order-items{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: 30px;
+    border: 1px solid tomato;
+    padding: 20px;
+    margin: 30px 0px;
+    font-size: 14px;
+    color: #505050;
+}
+
+.order-item-food, .order-item-name{
+    font-weight: 600;
+}
+
+.order-item-name{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.order-item-address{
+    margin-bottom: 10px;
+}
+
+.order-items select{
+    background-color: #ffe8e4;
+    border: 1px solid tomato;
+    width: max(10vw,120px);
+    padding: 10px;
+    outline: none;
+}
+
+@media (max-width:1000px) {
+    .order-items{
+        font-size: 12px;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        padding: 15px 8px;
+    }
+
+    .order-items select{
+        padding: 5px;
+        font-size: 12px;
+
+    }
+
+    .order-items img{
+        width: 40px;
+    }
+    
+} */
+
+.order-items {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+    align-items: start;
+    gap: 30px;
+    border: 1px solid tomato;
+    padding: 20px;
+    margin: 30px 0px;
+    font-size: 14px;
+    color: #505050;
+}
+
+.order-item-food, .order-item-name {
+    font-weight: 600;
+}
+
+.order-item-name {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.order-item-address {
+    margin-bottom: 10px;
+}
+
+.order-items select {
+    background-color: #ffe8e4;
+    border: 1px solid tomato;
+    width: max(10vw, 120px);
+    padding: 10px;
+    outline: none;
+}
+
+/* Media query for medium devices (tablets and smaller laptops) */
+@media (max-width: 1000px) {
+    .order-items {
+        font-size: 12px;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        padding: 15px 8px;
+    }
+
+    .order-items select {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .order-items img {
+        width: 40px;
+    }
+}
+
+/* Media query for small devices (landscape phones) */
+@media (max-width: 768px) {
+    .order-items {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        padding: 12px;
+    }
+
+    .order-item-name, .order-item-address {
+        font-size: 12px;
+    }
+}
+
+/* Media query for extra small devices (portrait phones) */
+@media (max-width: 480px) {
+    .order-items {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+        font-size: 10px;
+    }
+
+    .order-items img {
+        width: 30px;
+    }
+
+    .order-items select {
+        font-size: 10px;
+        padding: 5px;
+    }
+}
