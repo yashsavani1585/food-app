@@ -9,8 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
   
-  "build": "next build",
-  "start": "next start"
+  
 
 
   },
