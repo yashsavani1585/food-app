@@ -8,7 +8,7 @@ export const StoreContextProvider = (props) => {
     const [token, setToken] = useState("");
     const [food_list, setFoodList] = useState([]);
 
-    const url = "http://localhost:3000";
+    const url = "https://food-app-lgji.onrender.com";
 
     // Function to add items to cart
     const addToCart =async (itemId,event) => {
